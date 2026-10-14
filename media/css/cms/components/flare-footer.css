@@ -313,7 +313,13 @@ file, You can obtain one at https://mozilla.org/MPL/2.0/.
     margin: 0;
 }
 
+.fl-wnp-footer-social-links {
+    list-style: none;
+    margin-inline-start: 0;
+}
+
 .fl-wnp-footer-logo {
+    order: 1;
     padding-block: var(--token-spacing-lg);
 }
 
@@ -353,6 +359,15 @@ file, You can obtain one at https://mozilla.org/MPL/2.0/.
 .fl-wnp-footer-cta .fl-button {
     display: block;
     text-align: center;
+}
+
+@media (--viewport-sm-up) {
+    .fl-wnp-footer-social-links {
+        column-gap: var(--token-spacing-lg);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 @media (--viewport-md-up) {
